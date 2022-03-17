@@ -1,0 +1,6 @@
+package com.example.noshup_admin
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
