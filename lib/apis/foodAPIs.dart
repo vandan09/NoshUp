@@ -14,6 +14,7 @@ import 'package:intl/intl.dart';
 import 'package:progress_dialog/progress_dialog.dart';
 
 ProgressDialog pr;
+ProgressDialog pr1;
 
 void toast(String data) {
   Fluttertoast.showToast(
