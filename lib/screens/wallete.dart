@@ -1,11 +1,12 @@
-import 'dart:ffi';
-
 import 'package:canteen_food_ordering_app/apis/foodAPIs.dart';
 import 'package:canteen_food_ordering_app/notifiers/authNotifier.dart';
-import 'package:canteen_food_ordering_app/screens/GradientAppBar.dart';
+import 'package:canteen_food_ordering_app/screens/transactionHistory.dart';
+
 import 'package:canteen_food_ordering_app/widgets/customRaisedButton.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 
@@ -40,6 +41,16 @@ class _WalletPageState extends State<WalletPage> {
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
+      //onPrimary: Colors.black87,
+      elevation: 10,
+      primary: Colors.redAccent,
+      minimumSize: Size(88, 55),
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(30)),
+      ),
+    );
     AuthNotifier authNotifier =
         Provider.of<AuthNotifier>(context, listen: false);
     double balance = authNotifier.userDetails.balance;
@@ -56,10 +67,11 @@ class _WalletPageState extends State<WalletPage> {
             SizedBox(
               height: 10,
             ),
+            //white box main
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               width: MediaQuery.of(context).size.width,
-              height: 320,
+              height: 370,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: Colors.white,
@@ -74,7 +86,7 @@ class _WalletPageState extends State<WalletPage> {
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 15),
+                    padding: EdgeInsets.symmetric(vertical: 10),
                     alignment: Alignment.topCenter,
                   ),
                   //head
@@ -100,8 +112,9 @@ class _WalletPageState extends State<WalletPage> {
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 25,
                   ),
+                  //red box
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 30, horizontal: 40),
                     // height: MediaQuery.of(context).size.height / 2,
@@ -146,17 +159,51 @@ class _WalletPageState extends State<WalletPage> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                    child: ElevatedButton(
+                      style: raisedButtonStyle,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => transactionPage()),
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          Icon(Icons.history),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                              child: Text(
+                            'Transaction History',
+                            style: TextStyle(fontSize: 16),
+                          )),
+                          Icon(Icons.arrow_forward_ios)
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
+
             Bottompart1(),
             SizedBox(
               height: 20,
             ),
-            Bottompart2()
+            Bottompart2(),
+            SizedBox(
+              height: 10,
+            ),
 
             // authNotifier.userDetails.balance>balance
           ],
@@ -266,10 +313,30 @@ class _WalletPageState extends State<WalletPage> {
         textColor: Colors.white);
   }
 
-  void _handlePaymentSuccess(PaymentSuccessResponse response) {
+  Future<void> _handlePaymentSuccess(PaymentSuccessResponse response) async {
+    DateTime now = DateTime.now();
+    String formattedDate1 = DateFormat('kk:mm:ss').format(now);
+    String formattedDate2 = DateFormat('dd MMM yy').format(now);
     AuthNotifier authNotifier =
         Provider.of<AuthNotifier>(context, listen: false);
+
     addMoney(money, context, authNotifier.userDetails.uuid);
+    DocumentReference razorPayRef =
+        Firestore.instance.collection('RazorPay').document();
+
+    await razorPayRef
+        .setData({
+          'money': money,
+          'userID': authNotifier.userDetails.uuid,
+          'paymentID': response.paymentId,
+          'collectionID': razorPayRef.documentID,
+          'time': formattedDate1,
+          'date': formattedDate2,
+        })
+        .then((value) => toast('Creted response'))
+        .catchError(() {
+          toast('Error');
+        });
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
