@@ -19,7 +19,7 @@ class _OrderPageState extends State<OrderPage> {
         iconTheme: IconThemeData(color: Colors.redAccent),
         elevation: 5,
         title: Text(
-          "Order",
+          "Orders",
           style: TextStyle(
             color: Colors.redAccent,
             fontWeight: FontWeight.bold,
@@ -77,6 +77,9 @@ class _OrderPageState extends State<OrderPage> {
                             ),
                           ]),
                       child: Container(
+                        color: orders[index]['is_GrnDel']
+                            ? Colors.red.shade100
+                            : Colors.white,
                         child: orderDetailPage(orders[index]),
                       ),
                     ),
