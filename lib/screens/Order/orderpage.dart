@@ -19,7 +19,7 @@ class _OrderPageState extends State<OrderPage> {
         iconTheme: IconThemeData(color: Colors.redAccent),
         elevation: 5,
         title: Text(
-          "Orders",
+          "Order",
           style: TextStyle(
             color: Colors.redAccent,
             fontWeight: FontWeight.bold,
