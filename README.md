@@ -5,10 +5,38 @@
 <h4>Registration</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/1Landing%20Screen.jpg" height="450" width="225">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/2Signup.jpg" height="600" width="300">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/3Login.jpg" height="600" width="300">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/4Reset.jpg" height="600" width="300">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/2Signup.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/3Login.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/4Reset.jpg" height="450" width="225">
 </div>
+<h4>Place order</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/5Menu.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/6Search.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/7cart.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/8PayPopUP.jpg" height="450" width="225">
+</div>
+<h4>Wallet and Payment</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/9Wallet.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/10AddMoney.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/11RazorPay.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/9.1TransactionHistroy.jpg" height="450" width="225">
+</div>
+<h4>Order details</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/14ORDER HISTORY.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/15OrderDetails.jpg" height="450" width="225">
+</div>
+<h4>Profile and FAQs</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/12Profile.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/13EditProfil.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/16Feedback.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/17FAN.jpg" height="450" width="225">
+</div>
+
+
 
 
 <h3>Admin side</h3>
