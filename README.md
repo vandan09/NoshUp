@@ -36,10 +36,25 @@
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/17FAN.jpg" height="450" width="200">
 </div>
 
-
-
-
 <h3>Admin side</h3>
+<h4>Dashboard</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/5dashboard.png" height="400" width="650">
+
+</div>
+<h4>Menu and Manager</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/menu.png" height="400" width="650">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/EDIT.png" height="400" width="650">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/EXISTING.png" height="400" width="650">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/9DeleteEmpty.png" height="400" width="650">
+</div>
+
+<h4>Orders and Manager</h4>
+<div class="row">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new%20admin/10Order.png" height="400" width="650">
+
+</div>
 <h2>Tools Used</h2>
 <ol type="1">
 <li>Framework - Flutter</li>
