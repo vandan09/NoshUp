@@ -9,6 +9,7 @@
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/3Login.jpg" height="420" width="200">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/4Reset.jpg" height="420" width="200">
 </div>
+<br>
 <h4>Place order</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/5Menu.jpg" height="420" width="200">
@@ -16,6 +17,7 @@
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/7cart.jpg" height="420" width="200">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/8PayPopUP.jpg" height="420" width="200">
 </div>
+<br>
 <h4>Wallet and Payment</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/9Wallet.jpg" height="420" width="200">
@@ -23,11 +25,13 @@
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/11RazorPay.jpg" height="420" width="200">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/9.1TransactionHistroy.jpg" height="420" width="200">
 </div>
+<br>
 <h4>Order details</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/14ORDER HISTORY.jpg" height="420" width="200">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/15OrderDetails.jpg" height="420" width="200">
 </div>
+<br>
 <h4>Profile and FAQs</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/12Profile.jpg" height="450" width="200">
@@ -45,14 +49,14 @@
 <h4>Menu and Manager</h4>
 <div class="row">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/menu.png" height="230" width="350">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EDIT.png" height="250" width="350">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EXISTING.png" height="250" width="350">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/9DeleteEmpty.png" height="250" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EDIT.png" height="230" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EXISTING.png" height="230" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/9DeleteEmpty.png" height="230" width="350">
 </div>
 
 <h4>Orders and Manager</h4>
 <div class="row">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/10Order.png" height="250" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/10Order.png" height="230" width="350">
 
 </div>
 <h2>Tools Used</h2>
