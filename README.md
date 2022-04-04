@@ -4,7 +4,7 @@
 <h3>User side</h3>
 <h4>Registration</h4>
 <div class="row">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/1Landing%20Screen.jpg" height="450" width="225">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/1Landing%20Screen.jpg" height="420" width="200">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/2Signup.jpg" height="450" width="225">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/3Login.jpg" height="450" width="225">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/4Reset.jpg" height="450" width="225">
