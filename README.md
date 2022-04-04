@@ -3,6 +3,7 @@
 <h2>Screenshots</h2>
 <h3>User side</h3>
 <h4>Registration</h4>
+![text](https://github.com/vandan09/NoshUp/blob/main/images/User_Screenshots/1Landing%20Screen.jpg)
 <h3>Admin side</h3>
 <h2>Tools Used</h2>
 <ol type="1">
