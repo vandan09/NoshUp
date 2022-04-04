@@ -3,8 +3,7 @@
 <h2>Screenshots</h2>
 <h3>User side</h3>
 <h4>Registration</h4>
-(https://user-images.githubusercontent.com/71586361/161483285-892a24e6-db1e-4c8f-8e1f-2e5d0a551845.jpg)
-![1Landing Screen](https://user-images.githubusercontent.com/71586361/161483578-ce4f45c3-04e8-4163-8cb9-fed01de8ac2e.jpg)
+
 
 <h3>Admin side</h3>
 <h2>Tools Used</h2>
