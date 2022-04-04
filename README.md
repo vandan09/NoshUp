@@ -39,12 +39,12 @@
 <h3>Admin side</h3>
 <h4>Dashboard</h4>
 <div class="row">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/5dashboard.png" height="250" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/5dashboard.png" height="230" width="350">
 
 </div>
 <h4>Menu and Manager</h4>
 <div class="row">
-<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/menu.png" height="250" width="350">
+<img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/menu.png" height="230" width="350">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EDIT.png" height="250" width="350">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/EXISTING.png" height="250" width="350">
 <img src="https://github.com/vandan09/NoshUp/blob/main/images/new admin/9DeleteEmpty.png" height="250" width="350">
