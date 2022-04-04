@@ -255,6 +255,10 @@ addToCart(Food food, BuildContext context) async {
         .setData({"count": 1})
         .catchError((e) => print(e))
         .then((value) => print("Success"));
+
+    pr.hide().then((isHidden) {
+      print(isHidden);
+    });
   } catch (error) {
     pr.hide().then((isHidden) {
       print(isHidden);
@@ -287,6 +291,10 @@ removeFromCart(Food food, BuildContext context) async {
         .delete()
         .catchError((e) => print(e))
         .then((value) => print("Success"));
+
+    pr.hide().then((isHidden) {
+      print(isHidden);
+    });
   } catch (error) {
     pr.hide().then((isHidden) {
       print(isHidden);
@@ -405,6 +413,9 @@ editCartItem(String itemId, int count, BuildContext context) async {
           .catchError((e) => print(e))
           .then((value) => print("Success"));
     }
+    pr.hide().then((isHidden) {
+      print(isHidden);
+    });
   } catch (error) {
     pr.hide().then((isHidden) {
       print(isHidden);

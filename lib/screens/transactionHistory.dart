@@ -1,5 +1,8 @@
+import 'package:canteen_food_ordering_app/apis/foodAPIs.dart';
+import 'package:canteen_food_ordering_app/notifiers/authNotifier.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class transactionPage extends StatefulWidget {
   const transactionPage({Key key}) : super(key: key);
@@ -10,7 +13,17 @@ class transactionPage extends StatefulWidget {
 
 class _transactionPageState extends State<transactionPage> {
   @override
+  void initState() {
+    AuthNotifier authNotifier =
+        Provider.of<AuthNotifier>(context, listen: false);
+    getUserDetails(authNotifier);
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    AuthNotifier authNotifier =
+        Provider.of<AuthNotifier>(context, listen: false);
     return Scaffold(
         appBar: AppBar(
           title: Text("Transaction History"),
@@ -21,7 +34,10 @@ class _transactionPageState extends State<transactionPage> {
             shrinkWrap: true,
             children: [
               StreamBuilder<QuerySnapshot>(
-                stream: Firestore.instance.collection('RazorPay').snapshots(),
+                stream: Firestore.instance
+                    .collection('RazorPay')
+                    .where('userID', isEqualTo: authNotifier.userDetails.uuid)
+                    .snapshots(),
                 builder: (BuildContext context,
                     AsyncSnapshot<QuerySnapshot> snapshot) {
                   if (snapshot.hasData && snapshot.data.documents.length > 0) {
